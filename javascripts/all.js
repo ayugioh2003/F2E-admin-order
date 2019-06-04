@@ -1,3 +1,6 @@
+"use strict";
+"use strict";
+
 /*
  * @param node el: 當前 element 
  * @param string tagName: 想追蹤的 tagName
@@ -8,6 +11,7 @@ function upTo(el, tagName) {
 
   while (el && el.parentNode) {
     el = el.parentNode;
+
     if (el.tagName && el.tagName.toLowerCase() == tagName) {
       return el;
     }
@@ -15,3 +19,4 @@ function upTo(el, tagName) {
 
   return null;
 }
+//# sourceMappingURL=all.js.map
